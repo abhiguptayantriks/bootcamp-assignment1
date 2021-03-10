@@ -22,3 +22,9 @@ Body :
 A consumer consumes this message and runs a validation. The logger to verify is Consumer Record:
 If the posted information meets the criteria, it is published to a topic called correctEmployee. The logger to verify is #### -> Consumed message in correct topic ->
 If validation fails, the information is posted to a DeadLetterQueue. The logger to verify is #### -> Consumed message in DLQ ->
+
+
+Things to further work on
+1. Make changes to accept a list of employee details rather than a single employee at a time
+2. Give proper names to queues
+3. Improve logging
