@@ -27,4 +27,5 @@ If validation fails, the information is posted to a DeadLetterQueue. The logger 
 Things to further work on
 1. Make changes to accept a list of employee details rather than a single employee at a time
 2. Give proper names to queues
-3. Improve logging
+3. Introduce application.properties file to set the topic names and replcace hardcoded TOPIC variables from the code
+4. Introduce a setProperties API which can change the name of the topic while the application is deployed to avoid having to re-deploy(or restart) the application to take in-effect the changes made in application.properties
